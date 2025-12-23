@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>뉴본 | AI 스마트팜 & 농약 살포 로봇</title>
+  <meta name="description" content="뉴본(Newborn)은 AI 기반 병해 탐지와 정밀 농약 살포 로봇, 데이터 플랫폼으로 스마트팜의 생산성과 안전을 높입니다." />
+  <meta property="og:title" content="뉴본 | AI 스마트팜 & 농약 살포 로봇" />
+  <meta property="og:description" content="AI 병해 탐지, 정밀 살포 로봇, 데이터 플랫폼" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  <link rel="icon" href="/favicon.ico" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{--brand:#16a34a;--brand-600:#16a34a;--brand-700:#15803d;}
+    .container{max-width:1200px}
+    .glass{backdrop-filter: blur(8px); background:rgba(255,255,255,0.6)}
+    .shadow-soft{box-shadow:0 10px 25px rgba(0,0,0,0.08)}
+  </style>
+</head>
+<body class="antialiased text-gray-800">
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
+    <nav class="container mx-auto flex items-center justify-between p-4">
+      <a href="#" class="flex items-center gap-2 font-bold text-xl"><span class="inline-block w-8 h-8 rounded-xl bg-emerald-600"></span> 뉴본</a>
+      <button id="menuBtn" class="md:hidden p-2 rounded-lg border">메뉴</button>
+      <ul id="menu" class="hidden md:flex items-center gap-6 font-medium">
+        <li><a href="#products" class="hover:text-emerald-700">제품</a></li>
+        <li><a href="#tech" class="hover:text-emerald-700">기술</a></li>
+        <li><a href="#cases" class="hover:text-emerald-700">성과</a></li>
+        <li><a href="#about" class="hover:text-emerald-700">회사소개</a></li>
+        <li><a href="#contact" class="px-4 py-2 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700 shadow-soft">데모 신청</a></li>
+      </ul>
+    </nav>
+    <ul id="menuMobile" class="md:hidden hidden px-4 pb-4 space-y-2">
+      <li><a href="#products" class="block p-2 rounded-lg hover:bg-gray-50">제품</a></li>
+      <li><a href="#tech" class="block p-2 rounded-lg hover:bg-gray-50">기술</a></li>
+      <li><a href="#cases" class="block p-2 rounded-lg hover:bg-gray-50">성과</a></li>
+      <li><a href="#about" class="block p-2 rounded-lg hover:bg-gray-50">회사소개</a></li>
+      <li><a href="#contact" class="block p-2 rounded-lg bg-emerald-600 text-white text-center">데모 신청</a></li>
+    </ul>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-emerald-50 via-white to-white"></div>
+    <div class="container mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center relative">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+          AI로 더 똑똑해진
+          <span class="text-emerald-700">정밀 농약 살포 로봇</span>
+        </h1>
+        <p class="mt-5 text-lg text-gray-600">뉴본(Newborn)은 병해를 자동 탐지하고 필요한 곳에만 살포하여 비용을 절감하고 작물을 보호합니다.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#contact" class="px-6 py-3 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700 shadow-soft">데모 신청</a>
+          <a href="#products" class="px-6 py-3 rounded-xl border hover:bg-gray-50">제품 보기</a>
+        </div>
+        <div class="mt-6 flex items-center gap-6 text-sm text-gray-500">
+          <div>농약 사용량 최대 <b>25% 절감</b>*</div>
+          <div>노동 시간 <b>절감</b> & 안전 강화</div>
+        </div>
+        <p class="mt-1 text-xs text-gray-400">* 현장 조건에 따라 상이</p>
+      </div>
+      <div class="relative">
+        <div class="aspect-video w-full rounded-2xl bg-gray-100 border overflow-hidden shadow-soft">
+          <!-- Placeholder hero image/video area -->
+          <div class="h-full w-full grid place-items-center text-gray-400">
+            제품/데모 이미지 또는 영상 영역
+          </div>
+        </div>
+        <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl p-4 border shadow-soft hidden md:block">
+          <div class="text-sm text-gray-600">실시간 병해 탐지</div>
+          <div class="text-2xl font-bold">98ms</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST / LOGOS -->
+  <section class="py-10">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-sm uppercase tracking-widest text-gray-500">함께하는 파트너</p>
+      <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-6 opacity-70">
+        <div class="h-12 bg-gray-100 rounded-xl grid place-items-center">로고</div>
+        <div class="h-12 bg-gray-100 rounded-xl grid place-items-center">로고</div>
+        <div class="h-12 bg-gray-100 rounded-xl grid place-items-center">로고</div>
+        <div class="h-12 bg-gray-100 rounded-xl grid place-items-center">로고</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-extrabold">제품 라인업</h2>
+      <p class="mt-2 text-gray-600">현장 규모와 자동화 수준에 맞춰 선택하세요.</p>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <!-- Product 1 -->
+        <div class="bg-white rounded-2xl p-6 border shadow-soft">
+          <div class="h-40 bg-gray-100 rounded-xl grid place-items-center">이미지</div>
+          <h3 class="mt-4 text-xl font-bold">Entry — 반자동 분사기</h3>
+          <ul class="mt-3 text-gray-600 space-y-2 text-sm list-disc list-inside">
+            <li>YOLO 기반 병해 알림</li>
+            <li>구역별 수동/반자동 분사</li>
+            <li>기존 분무기와 연동</li>
+          </ul>
+          <a href="#contact" class="mt-5 inline-block px-4 py-2 rounded-xl border hover:bg-gray-50">견적 문의</a>
+        </div>
+        <!-- Product 2 -->
+        <div class="bg-white rounded-2xl p-6 border shadow-soft">
+          <div class="h-40 bg-gray-100 rounded-xl grid place-items-center">이미지</div>
+          <h3 class="mt-4 text-xl font-bold">AMR — 자율주행 살포 로봇</h3>
+          <ul class="mt-3 text-gray-600 space-y-2 text-sm list-disc list-inside">
+            <li>경로 계획 & 장애물 회피</li>
+            <li>병해 지점 정밀 분사</li>
+            <li>원격 모니터링</li>
+          </ul>
+          <a href="#contact" class="mt-5 inline-block px-4 py-2 rounded-xl border hover:bg-gray-50">데모 신청</a>
+        </div>
+        <!-- Product 3 -->
+        <div class="bg-white rounded-2xl p-6 border shadow-soft">
+          <div class="h-40 bg-gray-100 rounded-xl grid place-items-center">이미지</div>
+          <h3 class="mt-4 text-xl font-bold">Prime — 완전 자율형</h3>
+          <ul class="mt-3 text-gray-600 space-y-2 text-sm list-disc list-inside">
+            <li>24/7 자율 예찰·살포</li>
+            <li>클라우드 데이터 동기화</li>
+            <li>서비스형(구독) 제공</li>
+          </ul>
+          <a href="#contact" class="mt-5 inline-block px-4 py-2 rounded-xl border hover:bg-gray-50">컨설팅 요청</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH -->
+  <section id="tech" class="py-20">
+    <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-3xl font-extrabold">핵심 기술</h2>
+        <p class="mt-2 text-gray-600">현장 데이터로 학습된 컴퓨터비전과 엣지 AI, 그리고 클라우드 플랫폼.</p>
+        <div class="mt-6 space-y-4">
+          <div class="p-4 border rounded-2xl">
+            <h4 class="font-semibold">병해 탐지 모델</h4>
+            <p class="text-sm text-gray-600">YOLOv11/모바일넷 등 경량·고정확 탐지, 하드 네거티브로 오탐 최소화</p>
+          </div>
+          <div class="p-4 border rounded-2xl">
+            <h4 class="font-semibold">엣지 컴퓨팅</h4>
+            <p class="text-sm text-gray-600">Jetson Orin / Raspberry Pi 5 + 가속기로 저지연 추론</p>
+          </div>
+          <div class="p-4 border rounded-2xl">
+            <h4 class="font-semibold">데이터 플랫폼</h4>
+            <p class="text-sm text-gray-600">농장·블록·품종별 리포트, 살포 이력, 유지보수 예측</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-50 border rounded-2xl p-6">
+        <h3 class="text-xl font-bold">API & 연동</h3>
+        <ul class="mt-3 text-sm text-gray-700 space-y-2 list-disc list-inside">
+          <li>센서/관수/환경제어 시스템과 양방향 연동</li>
+          <li>Webhook/CSV/REST로 데이터 추출</li>
+          <li>OneDrive/Google Drive 리포트 자동 배포</li>
+        </ul>
+        <div class="mt-6 grid grid-cols-2 gap-4 text-sm">
+          <div class="p-4 bg-white border rounded-xl">
+            <div class="text-gray-500">평균 살포 절감</div>
+            <div class="text-2xl font-bold">~25%</div>
+          </div>
+          <div class="p-4 bg-white border rounded-xl">
+            <div class="text-gray-500">정확도(리콜)</div>
+            <div class="text-2xl font-bold">≥95%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASES / RESULTS -->
+  <section id="cases" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-extrabold">현장 성과</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 border">
+          <h4 class="font-semibold">고흥 스마트팜</h4>
+          <p class="mt-2 text-sm text-gray-600">토마토 하우스 상시 예찰 + 부분 살포로 약제 절감</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border">
+          <h4 class="font-semibold">실증 B</h4>
+          <p class="mt-2 text-sm text-gray-600">AMR 자율주행으로 야간 작업 자동화</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border">
+          <h4 class="font-semibold">실증 C</h4>
+          <p class="mt-2 text-sm text-gray-600">안전사고 위험 구간 접근 최소화</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20">
+    <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div class="aspect-video bg-gray-100 rounded-2xl border grid place-items-center">회사/현장 사진</div>
+      <div>
+        <h2 class="text-3xl font-extrabold">뉴본(Newborn)</h2>
+        <p class="mt-3 text-gray-600">스마트팜에 특화된 AI·로보틱스 기업입니다. 전남대학교 출신 엔지니어들이 현장에서 바로 쓰이는 기술을 개발합니다.</p>
+        <dl class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+          <div class="p-4 border rounded-xl bg-gray-50"><dt class="text-gray-500">설립</dt><dd class="font-semibold">2024년 7월</dd></div>
+          <div class="p-4 border rounded-xl bg-gray-50"><dt class="text-gray-500">분야</dt><dd class="font-semibold">AI 병해 탐지·살포 로봇</dd></div>
+          <div class="p-4 border rounded-xl bg-gray-50"><dt class="text-gray-500">주요 고객</dt><dd class="font-semibold">시설원예 농가/지자체</dd></div>
+          <div class="p-4 border rounded-xl bg-gray-50"><dt class="text-gray-500">거점</dt><dd class="font-semibold">광주·전남</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 bg-gradient-to-b from-white to-emerald-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto bg-white border rounded-2xl p-6 shadow-soft">
+        <h2 class="text-3xl font-extrabold">데모/도입 문의</h2>
+        <p class="mt-2 text-gray-600">아래 양식을 작성해 주세요. 영업일 기준 1~2일 내 연락드립니다.</p>
+        <form class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4" onsubmit="event.preventDefault(); alert('제출되었습니다! 이메일로 안내 드릴게요.');">
+          <div class="col-span-1">
+            <label class="text-sm text-gray-600">이름</label>
+            <input required class="w-full mt-1 p-3 border rounded-xl" placeholder="홍길동" />
+          </div>
+          <div class="col-span-1">
+            <label class="text-sm text-gray-600">연락처/이메일</label>
+            <input required class="w-full mt-1 p-3 border rounded-xl" placeholder="010-0000-0000 / you@example.com" />
+          </div>
+          <div class="md:col-span-2">
+            <label class="text-sm text-gray-600">관심 제품</label>
+            <select class="w-full mt-1 p-3 border rounded-xl">
+              <option>Entry — 반자동</option>
+              <option>AMR — 자율주행</option>
+              <option>Prime — 완전 자율형</option>
+              <option>컨설팅/기타</option>
+            </select>
+          </div>
+          <div class="md:col-span-2">
+            <label class="text-sm text-gray-600">메시지</label>
+            <textarea class="w-full mt-1 p-3 border rounded-xl" rows="4" placeholder="현장 규모, 작물, 일정 등을 알려주세요."></textarea>
+          </div>
+          <div class="md:col-span-2 flex items-center justify-between">
+            <label class="flex items-center gap-2 text-sm text-gray-600"><input type="checkbox" class="rounded" checked /> 개인정보 처리 방침 동의</label>
+            <button class="px-6 py-3 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700">제출하기</button>
+          </div>
+        </form>
+        <p class="mt-3 text-xs text-gray-400">* 실제 메일 전송 연동은 배포 시 설정합니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 border-t bg-white">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
+      <div class="text-sm text-gray-600">© <span id="year"></span> 뉴본(Newborn). All rights reserved.</div>
+      <div class="text-sm text-gray-600">사업자: (주)뉴본 | 대표: 정주영 | 이메일: contact@newborn.ai</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.getElementById('menuBtn');
+    const mobile = document.getElementById('menuMobile');
+    btn && btn.addEventListener('click', () => mobile.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
